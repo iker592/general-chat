@@ -18,6 +18,14 @@ This is a starter template for building AI agents using [LangGraph](https://www.
 
 ## Getting Started
 
+### Quick Start (Recommended)
+```bash
+# Install all dependencies and start servers
+make setup
+make local
+```
+
+### Manual Setup
 1. Install dependencies using your preferred package manager:
 ```bash
 # Using pnpm (recommended)
@@ -58,7 +66,20 @@ bun run dev
 
 This will start both the UI and agent servers concurrently.
 
-## Available Scripts
+## Available Commands
+
+### Using Makefile (Recommended)
+```bash
+make setup     # Install all dependencies (Node.js + Python)
+make local     # Start both UI and agent servers
+make dev       # Start development servers (alias for local)
+make ui        # Start only the Next.js UI server
+make agent     # Start only the LangGraph agent server
+make clean     # Clean build artifacts and dependencies
+make help      # Show all available commands
+```
+
+### Using Package Manager Scripts
 The following scripts can also be run using your preferred package manager:
 - `dev` - Starts both UI and agent servers in development mode
 - `dev:debug` - Starts development servers with debug logging enabled
